@@ -18,7 +18,7 @@ struct NewTaskView: View {
                 Picker("Приоритет", selection:$priority) {
                     ForEach(TaskPriority.allCases) { Text($0.rawValue).tag($0) }
                 }
-                Picker("Кто выполняет", selection:$author) {
+                Picker("Создатель", selection:$author) {
                     ForEach(TaskAuthor.allCases) { Text($0.rawValue).tag($0) }
                 }
             }
