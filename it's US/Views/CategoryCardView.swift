@@ -19,14 +19,14 @@ struct CategoryCardView: View {
             VStack(spacing: 6) {
                 // ⬆️  БОЛЬШЕ: было .headline → стало .title2.bold()
                 Text(category.name)
-                    .font(.headline.weight(.bold))
+                    .font(.title2)
                     .foregroundColor(.primary)
                     .outline()
                 
                 if let bottom = buildBottom() {
                     // ⬆️  БОЛЬШЕ: было .caption → стало .callout
                     Text(bottom)
-                        .font(.callout)
+                        .font(.caption2)
                         .foregroundColor(.secondary)
                         .outline()
                 }
