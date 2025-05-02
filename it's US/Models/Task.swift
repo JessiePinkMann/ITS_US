@@ -3,9 +3,9 @@ import SwiftUICore
 import FirebaseFirestore
 
 enum TaskAuthor: String, Codable, CaseIterable, Identifiable {
-    case egor  = "Егор"
-    case anna  = "Анна"
-    case both  = "Общее"
+    case egor  = "Егор 🌒"
+    case anna  = "Анна ☀️"
+    case both  = "Общее ♥️"
     var id: String { rawValue }
 }
 

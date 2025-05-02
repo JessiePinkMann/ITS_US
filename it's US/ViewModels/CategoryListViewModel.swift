@@ -9,7 +9,7 @@ final class CategoryListViewModel: ObservableObject {
     
     // состояние UI
     @Published var sort:     Sort   = .date
-    @Published var filter:   Creator? = nil        // ← Анна / Егор
+    @Published var filter:   Creator? = nil        
     @Published var search:   String = ""
     
     enum Sort { case date, alphabet }

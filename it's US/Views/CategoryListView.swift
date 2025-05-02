@@ -45,8 +45,8 @@ struct CategoryListView: View {
                         Menu("Создатель") {
                             Button("Все", action:{ vm.filter = nil })
                             Divider()
-                            Button("Анна", action:{ vm.filter = .anna })
-                            Button("Егор", action:{ vm.filter = .egor })
+                            Button("Анна ☀️", action:{ vm.filter = .anna })
+                            Button("Егор 🌒", action:{ vm.filter = .egor })
                         }
                     } label: {
                         Image(systemName:"arrow.up.arrow.down.circle")

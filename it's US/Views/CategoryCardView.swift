@@ -50,12 +50,12 @@ struct CategoryCardView: View {
         switch (category.createdDate, category.creator) {
         case let (d?, c):
             let date = df.string(from: d)
-            let who  = c == .common ? "Общее" : "Создатель: \(c.rawValue)"
+            let who  = c == .common ? "Общее ♥️" : "Создатель: \(c.rawValue)"
             return "\(date) · \(who)"
         case (nil, let c) where c != .common:
             return "Создатель: \(c.rawValue)"
         case (nil, .common):
-            return "Общее"
+            return "Общее ♥️"
         default:
             return nil
         }
